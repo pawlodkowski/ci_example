@@ -8,4 +8,4 @@ def test_wine():
     m = train_model(X, y)
     Xtest = np.ones((1,13))
     ypred = m.predict(Xtest)
-    assert 0 <= ypred[0] <= 2
+    assert 0 <= ypred[0] <= 0.5
